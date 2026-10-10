@@ -14,7 +14,7 @@ The examined artifacts were the two executables in the official [Windows x64 v0.
 | strata.exe | 164440576 | `17dabc6a49746aa22beebdf354923ba5eeb21affc6597c6976ac430e46671518` |
 | strata-vision.exe | 108195840 | `a4a8488a45a19bdf10f0c550a4fddd980572ac9c355456f0412a06cfd57b4f75` |
 
-Both executables are x64 PE files. Both have an empty Authenticode certificate directory and were reported as `NotSigned` by Windows `Get-AuthenticodeSignature`. Their bundled [BUILD.json](evidence/BUILD.json) identifies version 0.1.41, CUDA 13.0, and GPU architectures 75/86/89/120, but does not identify an exact source commit. No reproducible-build comparison or binary-to-source attestation was performed. The branch carrying this report is based on upstream commit `61b3fb5dd3f1e8ec09cf7e4e05208bc6d3c46406`; that is not an asserted build commit for these executables.
+Both executables are x64 PE files. Both have an empty Authenticode certificate directory and were reported as `NotSigned` by Windows `Get-AuthenticodeSignature`. Their bundled [BUILD.json](evidence/BUILD.json) identifies version 0.1.41, CUDA 13.0, and GPU architectures 75/86/89/120, but does not identify an exact source commit. No reproducible-build comparison or binary-to-source attestation was performed. The original Strata audit branch was based on upstream commit `61b3fb5dd3f1e8ec09cf7e4e05208bc6d3c46406`; that is not an asserted build commit for these executables.
 
 ## Checks and observations
 
